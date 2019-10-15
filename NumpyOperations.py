@@ -1,0 +1,15 @@
+import numpy as np
+
+n,m=map(int,input().split())
+p=list(map(int,input().split()))
+q=list(map(int,input().split()))
+a=np.array(p)
+a=a.reshape(n,m)
+b=np.array(q)
+b=b.reshape(n,m)
+print(np.add(a,b))
+print(np.subtract(a,b))
+print(np.multiply(a,b))
+print(np.divide(a,b))
+print(np.power(a,b))
+print(np.mod(a,b))
